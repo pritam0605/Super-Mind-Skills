@@ -1,0 +1,6 @@
+framework module Pods_SuperMindSkill {
+  umbrella header "Pods-SuperMindSkill-umbrella.h"
+
+  export *
+  module * { export * }
+}

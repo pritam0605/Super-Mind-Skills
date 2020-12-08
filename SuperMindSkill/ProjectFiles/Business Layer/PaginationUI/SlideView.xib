@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SlideView" customModule="SuperMindSkill" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCt-QB-zsa">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="initialUser" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-k3-wGG">
+                            <rect key="frame" x="114" y="0.0" width="186" height="186.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hfd-k3-wGG" secondAttribute="height" multiplier="1:1" id="1mb-Tz-F1b"/>
+                            </constraints>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-ob-fgh">
+                            <rect key="frame" x="0.0" y="206.5" width="414" height="611.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <string key="text">Life chanLife changing \n\n Super Mind Skill \n\n Assisting Individuals to change paradigms \n\n Record Affirmation \n\n Choose Mediate Music \n\n Feed the Sub Conscious \n 5/10 minutes per day \n Or \n Listen while you sleep \n\n It's life changing</string>
+                            <color key="textColor" red="0.98101645709999996" green="0.86262017489999998" blue="0.99624639749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sc3-ob-fgh" firstAttribute="top" secondItem="hfd-k3-wGG" secondAttribute="bottom" constant="20" id="7Jv-z3-j6v"/>
+                        <constraint firstItem="sc3-ob-fgh" firstAttribute="leading" secondItem="lCt-QB-zsa" secondAttribute="leading" id="EGF-af-pag"/>
+                        <constraint firstItem="hfd-k3-wGG" firstAttribute="top" secondItem="lCt-QB-zsa" secondAttribute="top" id="F0K-zp-G7r"/>
+                        <constraint firstItem="hfd-k3-wGG" firstAttribute="width" secondItem="lCt-QB-zsa" secondAttribute="width" multiplier="0.45" id="HJv-Pc-cwE"/>
+                        <constraint firstAttribute="bottom" secondItem="sc3-ob-fgh" secondAttribute="bottom" id="R6F-ox-O5t"/>
+                        <constraint firstAttribute="trailing" secondItem="sc3-ob-fgh" secondAttribute="trailing" id="a6j-KI-Ry4"/>
+                        <constraint firstItem="hfd-k3-wGG" firstAttribute="centerX" secondItem="lCt-QB-zsa" secondAttribute="centerX" id="wxC-Rw-61k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lCt-QB-zsa" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="0e3-HM-Ki1"/>
+                <constraint firstItem="lCt-QB-zsa" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" id="5hG-IY-soM"/>
+                <constraint firstItem="lCt-QB-zsa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ERk-zU-D55"/>
+                <constraint firstItem="lCt-QB-zsa" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Vbl-4g-Rg0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="lCt-QB-zsa" id="yOa-Mu-OV8"/>
+                <outlet property="imgInitialUser" destination="hfd-k3-wGG" id="ygE-B8-4FB"/>
+                <outlet property="txtInitialUser" destination="sc3-ob-fgh" id="3u1-ap-FaB"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="initialUser" width="244" height="244"/>
+    </resources>
+</document>
